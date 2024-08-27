@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Flask App</h1>
+    <p>The current value in the data.json file is: {{ data.value }}</p>
+    <form action="/update" method="POST">
+        <label for="input_value">Enter a new value:</label>
+        <input type="text" id="input_value" name="input_value" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
